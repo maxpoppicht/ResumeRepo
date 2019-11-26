@@ -1,0 +1,70 @@
+﻿<Window x:Class="_2DLevelEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2DLevelEditor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="440" Width="733">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <!--Upper Menu Line-->
+            <RowDefinition Height="*"/>
+            <!--Middle Field-->
+            <RowDefinition Height="32"/>
+            <!--Status Bar-->
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="New..." Click="New_Button"/>
+                <!--Open new Project-->
+                <MenuItem Header="Open..." Click="Load_Button"/>
+                <!--Open Existing Project-->
+                <MenuItem Header="Save" Click="SaveButton" />
+                <!--Save Project // if first save unse Save as...-->
+                <MenuItem Header="Save As..." Click="Save_As_Button"/>
+                <!--Save Project with name and Path in new window-->
+                <MenuItem Header="Export to Unity..."/>
+                <!--Saves Project and exports it in an folder. Convertsit to a usable file for unity-->
+                <Separator/>
+                <MenuItem Header="Quit" Click="CloseWindow" />
+                <!--Close Application-->
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Add GameObject..."/>
+                <!--GameObjects hinzufügen-->
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="Get Help Here..."/>
+                <!--Open Help-Window-->
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Header="Level" >
+                <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <Grid x:Name="Grid_EditArea">
+
+                    </Grid>
+                </ScrollViewer>
+            </GroupBox>
+            <!--Graphic surface to Place Gameobjects-->
+            <GroupBox Grid.Column="1" Header="GameObjects">
+                <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <Grid x:Name="Grid_GO_Area">
+                        <Grid.RowDefinitions>
+                           <!--Hier rowdefinitions festlegen, in denen Buttons eingefügt werden können-->
+                        </Grid.RowDefinitions>
+                        <!--hier Buttons einfügen-->
+                    </Grid>
+                </ScrollViewer>
+            </GroupBox>
+            <!--Graphic Surface to select Gameobjects-->
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\bin\Release\LevelFramework.dll
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\bin\Release\LevelFramework.pdb
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\obj\Release\LevelFramework.csprojAssemblyReference.cache
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\obj\Release\LevelFramework.csproj.CoreCompileInputs.cache
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\obj\Release\LevelFramework.dll
+C:\Users\marce\source\repos\2DLevelEditor\LevelFramework\obj\Release\LevelFramework.pdb

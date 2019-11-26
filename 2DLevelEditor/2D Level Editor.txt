@@ -1,0 +1,2 @@
+Application was written with XAML/C#
+Task was to create a simple 2D Level Editor that allows to save and load the created levels.
